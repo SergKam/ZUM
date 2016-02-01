@@ -1,0 +1,52 @@
+.canvas {
+    /*background: forestgreen;*/
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.grass {
+    position: absolute;
+    overflow: hidden;
+    background: url(image/grass.png);
+    z-index: 1;
+}
+
+.road {
+    position: absolute;
+    overflow: hidden;
+    width: 1000px;
+    height: 300px;
+    background: url(image/road.png);
+    z-index: 100;
+}
+
+.zum_right {
+    position: absolute;
+    width: 400px;
+    height: 230px;
+    background: url(image/trak2_small.png);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.zum_right.a1 {
+    background: url(image/trak2_1_small.png);
+}
+
+.popup {
+    display: block;
+    position: relative;
+    border: 3px solid darkred;
+    padding: 20px;
+    background: darkslateblue;
+    font: 30px fantasy;
+    color: wheat;
+    border-radius: 10px;
+    top: 100px;
+    left:300px;
+    width: 300px;
+    z-index: 3000;
+}

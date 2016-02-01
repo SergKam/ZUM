@@ -1,0 +1,25 @@
+{
+  "name": "zum",
+  "version": "0.0.0",
+  "authors": [
+    "Sergey Kamenskiy <sergkam@rambler.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  
+  "dependencies": {
+    "requirejs":"",
+    "async": ""
+  }
+}
