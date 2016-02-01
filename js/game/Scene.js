@@ -45,10 +45,15 @@ define(["./Zum", "./Road", "../bower_components/async/dist/async"], function(Zum
                 function(next) {
                     zum.deltaLeft = 0;
                     zum.animation = false;
-                    zum.ask("Хочешь покататься? Тогда нажми на стрелку", function() {
+                    zum.ask("Хочешь покататься? <br>Тогда нажми на на круг<div> <div class = 'rect'></div><div class = 'circle'></div></div>", function(e) {
+                        if (e.target.className !== "circle") {
+                            return false;
+                        }
+
                         zum.deltaLeft = 200;
                         zum.animation = true;
                         self.wait(5000, next);
+                        return true;
                     });
                 },
                 function(next) {

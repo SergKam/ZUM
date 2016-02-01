@@ -29,9 +29,11 @@ define(["./Actor", "./utils"], function(Actor, utils) {
             var panel = document.createElement('div');
             panel.className = "popup";
             panel.innerHTML = message;
-            panel.addEventListener("click", function() {
-                panel.parentNode.removeChild(panel);
-                cb()
+            panel.addEventListener("click", function(e) {
+                console.log(e);
+                if(cb(e)) {
+                    panel.parentNode.removeChild(panel);
+                }
             });
             this.game.canvas.appendChild(panel);
         }
