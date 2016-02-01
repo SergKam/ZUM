@@ -1,2 +1,4 @@
 # ZUM
-small child play game about car called ZUM
+Small child play game about the car called ZUM
+
+demo http://sergkam.github.io/ZUM/
